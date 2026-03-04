@@ -30,22 +30,54 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F94FA27F2F50A145000373BC /* Exceptions for "RCA(Programmatic UI)" folder in "RCA(Programmatic UI)" target */ = {
+		F91A0C9F2F518C92000D0B8A /* Exceptions for "Resources" folder in "RCA(Programmatic UI)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = F94FA2562F50A143000373BC /* RCA(Programmatic UI) */;
 		};
+		F91A0CAD2F518FB5000D0B8A /* Exceptions for "Features" folder in "RCA(Programmatic UI)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				1.FormGuide/FormGuideCardView.swift,
+				1.FormGuide/FormGuideDetailVC.swift,
+				1.FormGuide/FormGuideVC.swift,
+				2.Home/GuidePageCell.swift,
+				2.Home/HomeVC.swift,
+				2.Home/ProfileVC.swift,
+				2.Home/ShootingGuideVC.swift,
+				3.History/HistoryVC.swift,
+			);
+			target = F94FA2562F50A143000373BC /* RCA(Programmatic UI) */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F94FA2592F50A143000373BC /* RCA(Programmatic UI) */ = {
+		F91A0C932F518C88000D0B8A /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		F91A0C962F518C8C000D0B8A /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F91A0C9C2F518C92000D0B8A /* Resources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				F94FA27F2F50A145000373BC /* Exceptions for "RCA(Programmatic UI)" folder in "RCA(Programmatic UI)" target */,
+				F91A0C9F2F518C92000D0B8A /* Exceptions for "Resources" folder in "RCA(Programmatic UI)" target */,
 			);
-			path = "RCA(Programmatic UI)";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F91A0CA82F518EBA000D0B8A /* Features */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F91A0CAD2F518FB5000D0B8A /* Exceptions for "Features" folder in "RCA(Programmatic UI)" target */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		F94FA2702F50A145000373BC /* RCA(Programmatic UI)Tests */ = {
@@ -88,7 +120,10 @@
 		F94FA24E2F50A143000373BC = {
 			isa = PBXGroup;
 			children = (
-				F94FA2592F50A143000373BC /* RCA(Programmatic UI) */,
+				F91A0C932F518C88000D0B8A /* App */,
+				F91A0C962F518C8C000D0B8A /* Core */,
+				F91A0CA82F518EBA000D0B8A /* Features */,
+				F91A0C9C2F518C92000D0B8A /* Resources */,
 				F94FA2702F50A145000373BC /* RCA(Programmatic UI)Tests */,
 				F94FA27A2F50A145000373BC /* RCA(Programmatic UI)UITests */,
 				F94FA2582F50A143000373BC /* Products */,
@@ -121,7 +156,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F94FA2592F50A143000373BC /* RCA(Programmatic UI) */,
+				F91A0C932F518C88000D0B8A /* App */,
+				F91A0C962F518C8C000D0B8A /* Core */,
+				F91A0C9C2F518C92000D0B8A /* Resources */,
 			);
 			name = "RCA(Programmatic UI)";
 			packageProductDependencies = (
@@ -291,12 +328,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2586VHZ45N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RCA(Programmatic UI)/Info.plist";
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,12 +343,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eunteak.RCA-Programmatic-UI-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,12 +365,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2586VHZ45N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RCA(Programmatic UI)/Info.plist";
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,12 +380,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eunteak.RCA-Programmatic-UI-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -5,25 +5,43 @@
 //  Created by 오은택 on 2/27/26.
 //
 
+// MARK: - NavTabBar
+
 import UIKit
 
-class RootTabBarControllerViewController: UITabBarController {
+final class RootTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let formGuideVC = FormGuideVC()
+        let homeVC = HomeVC()
+        let historyVC = HistoryVC()
 
-        // Do any additional setup after loading the view.
+        // 보통 탭마다 네비게이션이 필요해서 UINavigationController로 감싼다
+        let formNav = UINavigationController(rootViewController: formGuideVC)
+        let homeNav = UINavigationController(rootViewController: homeVC)
+        let historyNav = UINavigationController(rootViewController: historyVC)
+
+        formNav.tabBarItem = UITabBarItem(
+            title: "Form",
+            image: UIImage(systemName: "list.bullet.rectangle"),
+            selectedImage: UIImage(systemName: "list.bullet.rectangle.fill")
+        )
+
+        homeNav.tabBarItem = UITabBarItem(
+            title: "Running Form Coach",
+            image: UIImage(systemName: "figure.run.treadmill"),
+            selectedImage: UIImage(systemName: "figure.run.treadmill")
+        )
+
+        historyNav.tabBarItem = UITabBarItem(
+            title: "History",
+            image: UIImage(systemName: "clock"),
+            selectedImage: UIImage(systemName: "clock.fill")
+        )
+
+        setViewControllers([formNav, homeNav, historyNav], animated: false)
+        selectedIndex = 1
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

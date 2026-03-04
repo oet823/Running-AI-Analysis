@@ -6,7 +6,7 @@ final class SplashVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGreen
+        view.backgroundColor = .systemCyan
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.goNext()

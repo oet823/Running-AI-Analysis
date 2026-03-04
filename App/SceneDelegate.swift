@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // 3. 첫 화면으로 우리가 만든 'ViewController'를 지정합니다.
         // (이때 ViewController.swift 안에 배경색 코드가 있어야 주황색이 나옵니다.)
-        window.rootViewController = ViewController()
+        window.rootViewController = SplashVC()
         
         // 4. 이 유리창을 메인으로 설정하고 불을 켭니다.
         self.window = window
