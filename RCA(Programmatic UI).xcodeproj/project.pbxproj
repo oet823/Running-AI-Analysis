@@ -37,20 +37,6 @@
 			);
 			target = F94FA2562F50A143000373BC /* RCA(Programmatic UI) */;
 		};
-		F91A0CAD2F518FB5000D0B8A /* Exceptions for "Features" folder in "RCA(Programmatic UI)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				1.FormGuide/FormGuideCardView.swift,
-				1.FormGuide/FormGuideDetailVC.swift,
-				1.FormGuide/FormGuideVC.swift,
-				2.Home/GuidePageCell.swift,
-				2.Home/HomeVC.swift,
-				2.Home/ProfileVC.swift,
-				2.Home/ShootingGuideVC.swift,
-				3.History/HistoryVC.swift,
-			);
-			target = F94FA2562F50A143000373BC /* RCA(Programmatic UI) */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -72,14 +58,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F91A0CA82F518EBA000D0B8A /* Features */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F91A0CAD2F518FB5000D0B8A /* Exceptions for "Features" folder in "RCA(Programmatic UI)" target */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
 		F94FA2702F50A145000373BC /* RCA(Programmatic UI)Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "RCA(Programmatic UI)Tests";
@@ -88,6 +66,11 @@
 		F94FA27A2F50A145000373BC /* RCA(Programmatic UI)UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "RCA(Programmatic UI)UITests";
+			sourceTree = "<group>";
+		};
+		F9E93E472F5D71DD00A8A9BD /* Features */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -122,7 +105,7 @@
 			children = (
 				F91A0C932F518C88000D0B8A /* App */,
 				F91A0C962F518C8C000D0B8A /* Core */,
-				F91A0CA82F518EBA000D0B8A /* Features */,
+				F9E93E472F5D71DD00A8A9BD /* Features */,
 				F91A0C9C2F518C92000D0B8A /* Resources */,
 				F94FA2702F50A145000373BC /* RCA(Programmatic UI)Tests */,
 				F94FA27A2F50A145000373BC /* RCA(Programmatic UI)UITests */,
@@ -159,6 +142,7 @@
 				F91A0C932F518C88000D0B8A /* App */,
 				F91A0C962F518C8C000D0B8A /* Core */,
 				F91A0C9C2F518C92000D0B8A /* Resources */,
+				F9E93E472F5D71DD00A8A9BD /* Features */,
 			);
 			name = "RCA(Programmatic UI)";
 			packageProductDependencies = (
